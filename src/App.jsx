@@ -5,6 +5,7 @@ import Portfolio from './sections/Portfolio';
 import CaseStudy from './sections/CaseStudy';
 import About from './sections/About';
 import Contact from './sections/Contact';
+import ChatWidget from './components/ChatWidget';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <CaseStudy />
       <About />
       <Contact />
+      <ChatWidget />
     </Layout>
   );
 }

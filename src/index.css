@@ -1,16 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #111111;
-  --color-accent: #4F46E5;
-  --color-light-grey: #F7F7F7;
+  --color-primary: #0B1120; /* Richer, darker Slate */
+  --color-accent: #6366F1;  /* Vibrant Indigo */
+  --color-accent-dark: #4338CA;
+  --color-light-grey: #F8FAFC; 
+  --color-muted: #64748B;   
 
   --font-sans: Inter, system-ui, sans-serif;
-  --radius-DEFAULT: 8px;
+  --radius-DEFAULT: 12px; /* Softer, friendlier radius */
 }
 
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     /* Using semantic names manually if utilities aren't generated yet */
     font-family: var(--font-sans);
@@ -36,8 +41,8 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex;
+  place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -66,15 +71,4 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+

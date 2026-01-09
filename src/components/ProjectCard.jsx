@@ -1,35 +1,40 @@
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
-const ProjectCard = ({ title, description, tags, imagePlaceholder }) => {
+const ProjectCard = ({ title, description, tags, image }) => {
   return (
-    <div className="group bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300">
-      <div className="aspect-w-16 aspect-h-10 bg-gray-100 w-full h-64 relative overflow-hidden">
-        {/* Placeholder for project image - using a subtle pattern or simple background */}
-        <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-500">
-          {imagePlaceholder || (
-            <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-          )}
-        </div>
-        {tags && (
-           <div className="absolute top-4 left-4">
-             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-white/90 text-primary shadow-sm backdrop-blur-sm">
-               {tags}
-             </span>
-           </div>
+    <div className="group rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-accent/10 transition-all duration-300 overflow-hidden flex flex-col h-full">
+      {/* Image Container */}
+      <div className="relative aspect-video overflow-hidden bg-gray-100">
+        {image ? (
+            <img 
+                src={image} 
+                alt={title} 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+        ) : (
+            <div className="w-full h-full flex items-center justify-center text-gray-400 bg-gray-50">
+                <span className="font-medium">No Image</span>
+            </div>
         )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <button className="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                View Project <ExternalLink size={14} />
+            </button>
+        </div>
       </div>
-      
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">{title}</h3>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">{description}</p>
-        <button className="text-sm font-semibold text-primary group-hover:text-accent transition-colors inline-flex items-center">
-          View Project 
-          <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </button>
+
+      <div className="p-8 flex-1 flex flex-col">
+        <div className="flex items-center justify-between mb-4">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-accent/10 text-accent uppercase tracking-wide">
+            {tags}
+            </span>
+        </div>
+        
+        <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">{title}</h3>
+        <p className="text-muted leading-relaxed mb-6 flex-1">
+          {description}
+        </p>
       </div>
     </div>
   );
