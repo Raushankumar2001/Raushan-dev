@@ -3,7 +3,7 @@ import { Code, Monitor, Wrench } from 'lucide-react';
 import Section from '../components/Section';
 import Reveal from '../components/Reveal';
 
-// eslint-disable-next-line react/prop-types, no-unused-vars
+// eslint-disable-next-line no-unused-vars
 const ServiceIcon = ({ icon: Icon }) => (
   <div className="w-12 h-12 rounded-xl bg-accent/5 flex items-center justify-center text-accent mb-6 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
     <Icon size={24} />
