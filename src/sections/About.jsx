@@ -12,7 +12,7 @@ const About = () => {
                 <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-tr from-accent to-purple-600 rounded-2xl transform rotate-6 scale-105 opacity-20 blur-xl"></div>
                     <img 
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" 
+                    src='../raushan.png'
                         alt="Profile" 
                         className="relative rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500 transform hover:-translate-y-2"
                     />

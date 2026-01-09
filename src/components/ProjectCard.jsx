@@ -18,8 +18,8 @@ const ProjectCard = ({ title, description, tags, image }) => {
             </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-            <button className="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                View Project <ExternalLink size={14} />
+            <button className="bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-sm flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-accent hover:text-white hover:shadow-lg">
+                View Project <ExternalLink size={16} />
             </button>
         </div>
       </div>
