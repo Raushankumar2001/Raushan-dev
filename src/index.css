@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #111111;
+  --color-accent: #4F46E5;
+  --color-light-grey: #F7F7F7;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --radius-DEFAULT: 8px;
+}
+
+
+@layer base {
+  body {
+    /* Using semantic names manually if utilities aren't generated yet */
+    font-family: var(--font-sans);
+    color: var(--color-primary);
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+/* Custom base styles are handled via mapped utilities from @theme */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-primary);
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
