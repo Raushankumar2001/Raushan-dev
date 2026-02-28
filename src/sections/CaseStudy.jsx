@@ -1,4 +1,5 @@
 import React from 'react';
+import { Check } from 'lucide-react';
 import Section from '../components/Section';
 import Reveal from '../components/Reveal';
 
@@ -40,44 +41,60 @@ const CaseStudy = () => {
         <div className="order-1 lg:order-2 space-y-6">
           <Reveal>
             <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-semibold tracking-wide uppercase">
-              Featured Case Study
+              How I Work
             </div>
           </Reveal>
           
           <Reveal delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
-              Scaling a UK E-commerce Brand from Woo to Headless
+              Building Websites That Are Easy to Use and Easy to Maintain
             </h2>
           </Reveal>
           
           <Reveal delay={0.2}>
-            <p className="text-lg text-muted leading-relaxed">
-              We migrated a slow, plugin-heavy WooCommerce site to a custom headless solution. The result was near-instant page loads, better SEO rankings, and a significant increase in conversion rate.
-            </p>
+            <div className="text-lg text-muted leading-relaxed space-y-4">
+              <p>
+                Many businesses struggle with slow, hard-to-manage websites. My goal is always to create solutions that are simple for users and easy for teams to manage.
+              </p>
+              <p>
+                The result is a website that feels reliable, scalable, and ready for growth.
+              </p>
+            </div>
           </Reveal>
           
           <div className="pt-6 space-y-4">
              <Reveal delay={0.3}>
                <div className="flex gap-4 items-start">
                  <div className="mt-1 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
-                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                   <Check size={14} strokeWidth={3} />
                  </div>
                  <div>
-                   <h4 className="font-semibold text-primary">Core Web Vitals Optimisation</h4>
-                   <p className="text-sm text-muted">achieved green scores across all metrics.</p>
+                   <h4 className="font-semibold text-primary">Clean WordPress Architecture</h4>
+                   <p className="text-sm text-muted">Scalable and easy to maintain.</p>
                  </div>
                </div>
              </Reveal>
              <Reveal delay={0.4}>
                <div className="flex gap-4 items-start">
                  <div className="mt-1 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
-                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                   <Check size={14} strokeWidth={3} />
                  </div>
                  <div>
-                   <h4 className="font-semibold text-primary">Custom React Frontend</h4>
-                   <p className="text-sm text-muted">built with Next.js for superior UX.</p>
+                   <h4 className="font-semibold text-primary">Flexible ACF-based Content</h4>
+                   <p className="text-sm text-muted">Empowering teams to edit content easily.</p>
                  </div>
                </div>
+             </Reveal>
+             <Reveal delay={0.5}>
+                <div className="flex gap-4 items-start">
+                  <div className="mt-1 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                    <Check size={14} strokeWidth={3} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary">SEO & Performance Focused</h4>
+                    <p className="text-sm text-muted">Built for speed and search engine visibility.</p>
+                  </div>
+                </div>
              </Reveal>
           </div>
         </div>

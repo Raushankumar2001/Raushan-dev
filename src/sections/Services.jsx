@@ -35,33 +35,33 @@ const Services = () => {
       title: "WordPress Development",
       icon: Code,
       items: [
-        "Custom theme development",
-        "ACF Pro integration",
+        "Custom WordPress theme development",
+        "ACF-based dynamic content",
         "Gutenberg block development",
         "WooCommerce implementation",
-        "API integrations"
+        "API & third-party integrations"
       ]
     },
     {
-      title: "React Web Apps",
+      title: "React & Frontend Development",
       icon: Monitor,
       items: [
-        "Next.js / Vite applications",
-        "Headless WordPress setup",
-        "Interactive dashboards",
-        "Performance optimization",
-        "Modern ES6+ JavaScript"
+        "React (Vite / Next.js) applications",
+        "Headless WordPress integration",
+        "Authentication & protected routes",
+        "Performance optimisation",
+        "Modern JavaScript (ES6+)"
       ]
     },
     {
       title: "Support & Maintenance",
       icon: Wrench,
       items: [
-        "Security audits & fixing",
-        "Core & plugin updates",
-        "Speed optimization (Core Web Vitals)",
-        "Accessibility remediation",
-        "Dedicated UK support"
+        "Bug fixing & issue resolution",
+        "Core, theme & plugin updates",
+        "Speed & performance improvements",
+        "Accessibility enhancements",
+        "Ongoing technical support"
       ]
     }
   ];
@@ -70,13 +70,13 @@ const Services = () => {
     <Section id="services" background="light">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <Reveal width="100%">
-          <h2 className="text-sm font-semibold text-accent tracking-wide uppercase mb-3">What I Do</h2>
+          <h2 className="text-sm font-semibold text-accent tracking-wide uppercase mb-3">How I Can Help You</h2>
         </Reveal>
         <Reveal width="100%" delay={0.1}>
-          <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4">Technical Services for UK Business</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4">I focus on building websites that are easy to manage, fast to load, and ready to grow with your business.</h3>
         </Reveal>
         <Reveal width="100%" delay={0.2}>
-          <p className="text-lg text-muted">Specialised development services tailored for growth-focused companies.</p>
+          <p className="text-lg text-muted">Your website should work for you, not against you.</p>
         </Reveal>
       </div>
       

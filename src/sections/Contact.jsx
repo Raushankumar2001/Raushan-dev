@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Check } from 'lucide-react';
 import Section from '../components/Section';
 import Button from '../components/Button';
 import Reveal from '../components/Reveal';
@@ -36,11 +37,14 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div className="space-y-8">
             <Reveal>
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Let’s discuss your project</h2>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Let’s Build Something That Works</h2>
             </Reveal>
             <Reveal delay={0.1}>
                 <p className="text-gray-300 text-xl font-light max-w-lg leading-relaxed">
-                I am currently accepting new projects for Q1. Whether you have a strict deadline or are just planning ahead, let's talk.
+                Whether you’re starting from scratch or improving an existing website, I’d love to understand your goals and help you find the right solution.
+                </p>
+                <p className="text-gray-300 text-xl font-light max-w-lg leading-relaxed mt-4">
+                I’m open to projects worldwide and happy to discuss ideas, timelines, and requirements.
                 </p>
             </Reveal>
             
@@ -48,11 +52,11 @@ const Contact = () => {
                 <div className="pt-4 flex flex-col gap-6 text-sm text-gray-400">
                     <div className="flex items-center">
                         <div className="w-2 h-2 rounded-full bg-green-500 mr-3 shadow-[0_0_10px_rgba(34,197,94,0.5)]"></div>
-                        <span>Available for UK timezone work</span>
+                        <span>Available for global clients</span>
                     </div>
                     <div className="flex items-center">
-                        <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                        <span>contact@example.com</span>
+                        <Check className="w-5 h-5 mr-3 text-accent" />
+                        <span>Clear communication & Professional delivery</span>
                     </div>
                 </div>
             </Reveal>

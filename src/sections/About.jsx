@@ -1,4 +1,5 @@
 import React from 'react';
+import { Download } from 'lucide-react';
 import Section from '../components/Section';
 import Reveal from '../components/Reveal';
 
@@ -38,28 +39,35 @@ const About = () => {
                 <Reveal width="100%">
                     <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-2">About Me</h2>
                     <h3 className="text-3xl md:text-5xl font-bold text-primary relative z-10 leading-tight">
-                        Bridging the gap between <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-600">Design</span> & Code.
+                        Bridging the Gap Between <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-600">Design</span> & Code
                     </h3>
                 </Reveal>
                 
                 <Reveal width="100%" delay={0.1}>
                     <p className="text-lg text-muted leading-relaxed relative z-10">
-                        I’m a senior WordPress developer with a passion for building beautiful, functional websites. With over 6 years of experience working with UK agencies and startups, I understand the importance of clear communication, meeting deadlines, and writing code that scales.
+                        I’m a WordPress and Frontend Developer with professional experience building real-world web applications and business websites.
                     </p>
                 </Reveal>
                 
                 <Reveal width="100%" delay={0.2}>
                     <p className="text-lg text-muted leading-relaxed relative z-10">
-                        I don't just build websites; I build reliable digital assets that help your business grow.
+                        I enjoy turning ideas into clean, functional, and reliable digital experiences. I care deeply about writing maintainable code, meeting deadlines, and communicating clearly throughout a project.
+                    </p>
+                    <p className="text-lg text-muted leading-relaxed relative z-10 mt-4">
+                        I don’t just build websites — I build solutions businesses can trust.
                     </p>
                 </Reveal>
 
                 <Reveal width="100%" delay={0.3}>
                    <div className="pt-4">
-                       <button className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold transition-all duration-300 rounded-lg focus:outline-none bg-primary text-white hover:bg-gradient-to-r hover:from-accent hover:to-purple-600 hover:shadow-lg hover:-translate-y-0.5 whitespace-nowrap">
-                           Read more about my process
-                       </button>
-                       
+                       <a 
+                           href="/resume.pdf" 
+                           download="Raushan_Kumar_CV.pdf"
+                           className="inline-flex items-center justify-center px-8 py-3 text-base font-bold transition-all duration-300 rounded-xl focus:outline-none bg-primary text-white hover:bg-gradient-to-r hover:from-accent hover:to-purple-600 hover:shadow-lg hover:-translate-y-1 shadow-md"
+                       >
+                           <Download className="mr-2" size={20} />
+                           Download CV
+                       </a>
                    </div>
                 </Reveal>
              </div>

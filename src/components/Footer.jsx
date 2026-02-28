@@ -8,7 +8,7 @@ const Footer = () => {
           <span className="text-xl font-bold tracking-tight text-primary">
             Dev<span className="text-accent">.</span>Portfolio
           </span>
-          <p className="text-sm text-gray-500 mt-2">© {new Date().getFullYear()} WordPress Developer UK. All rights reserved.</p>
+          <p className="text-sm text-gray-500 mt-2">© 2026 Raushan Kumar. WordPress & Frontend Developer. Building reliable websites with care and clarity.</p>
         </div>
         
         <div className="flex space-x-6">

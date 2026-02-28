@@ -17,16 +17,16 @@ const Hero = () => {
         <div className="space-y-8 max-w-2xl">
           <Reveal>
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-primary leading-[1.1]">
-              WordPress Developer for <br className="hidden lg:block"/>
+              I Build Reliable Websites That Help <br className="hidden lg:block"/>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-purple-600">
-                UK Small Businesses
-              </span> & Startups
+                Businesses Grow
+              </span>
             </h1>
           </Reveal>
           
           <Reveal delay={0.35}>
             <p className="text-lg md:text-xl text-muted leading-relaxed max-w-lg font-medium">
-              I build <span className="text-primary font-semibold">fast, secure, and scalable</span> websites using custom themes, ACF, and modern React technology.
+              I’m a <span className="text-primary font-semibold">WordPress and Frontend Developer</span> who helps businesses turn ideas into fast, secure, and scalable websites using custom themes, ACF, and modern frontend development.
             </p>
           </Reveal>
           
@@ -47,19 +47,19 @@ const Hero = () => {
                 <div className="p-1 rounded-full bg-green-100 text-green-600">
                   <Check size={16} strokeWidth={3} />
                 </div>
-                Custom Themes
+                Clean & maintainable code
               </div>
               <div className="flex items-center gap-2">
                 <div className="p-1 rounded-full bg-green-100 text-green-600">
                   <Check size={16} strokeWidth={3} />
                 </div>
-                Clean Code
+                Performance-focused development
               </div>
               <div className="flex items-center gap-2">
                 <div className="p-1 rounded-full bg-green-100 text-green-600">
                   <Check size={16} strokeWidth={3} />
                 </div>
-                UK Timezone
+                Clear communication & on-time delivery
               </div>
             </div>
           </Reveal>
